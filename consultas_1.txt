@@ -1,0 +1,28 @@
+Consultas básicas (inserción, selección, actualización y eliminación de documentos).
+
+1. Insertando un cliente nuevo:
+
+db.clientes.insertOne({
+  codigo_cliente: "999999999",
+  nombre: "Cliente Prueba",
+  documento: "1234567890",
+  telefono: "3200000000",
+  email: "cliente.prueba@correo.com",
+  direccion: "Calle 123 #45-67",
+  ciudad: "Bogotá"
+});
+
+2. Actualizacion de documento:
+
+db.clientes.updateOne(
+  { codigo_cliente: "999999999" },
+  { $set: { telefono: "3201112233" } }
+);
+
+3. Consultamos documento actualizado:
+
+db.clientes.find({ciudad: "Bogotá"})
+
+4. Eliminamos el documento:
+
+db.clientes.deleteOne({ codigo_cliente: "999999999" });
