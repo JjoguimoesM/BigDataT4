@@ -1,0 +1,5 @@
+En la primera consulta de agregación el resultado muestra que cada zona tiene exactamente 30 técnicos. Eso significa que la empresa tiene bien distribuido su personal en todo el territorio. No hay zonas con más carga que otras, y cada región cuenta con el mismo número de técnicos disponibles. 
+
+En la segunda consulta se observa que los distintos tipos de equipos manejan un número promedio de puertos LAN bastante similar, entre 3 y 4 puertos. Esto tiene sentido porque en la vida real, la mayoría de estos dispositivos ofrecen pocas conexiones físicas. Los routers, por ejemplo, suelen tener menos puertos, mientras que otros como las ONT o las antenas pueden venir con más opciones. 
+
+Y en la tercera consulta el resultado muestra que se han usado 240 unidades del material que filtramos. Esto deja claro que este componente es uno de los más comunes en las intervenciones técnicas. Es normal, porque los patch cords se cambian con frecuencia cuando hay fallas en la conexión o cuando se hacen ajustes en la instalación. 
