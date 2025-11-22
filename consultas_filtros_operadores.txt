@@ -1,0 +1,13 @@
+Consultas con filtros y operadores.
+
+1. Consulta equipos que contengan un valor mayor a –18 en el campo potencia_optica_dbm. :
+
+db.equipos.find({
+  potencia_optica_dbm: { $gt: -18 }
+})
+
+2. Se consulta estados de ordenes de mantenimiento que no estén cerradas: 
+
+db.ordenes_mantenimiento.find({
+  estado: { $ne: "cerrada" }
+})
