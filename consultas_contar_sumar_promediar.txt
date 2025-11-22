@@ -1,0 +1,34 @@
+Consultas de agregación para calcular estadísticas (contar, sumar, promediar, etc.) 
+
+1. Agrupa el numero de tecnicos que hay por cada zona en la coleccion:
+
+db.tecnicos.aggregate([
+  {
+    $group: {
+      _id: "$zona",
+      total_tecnicos: { $sum: 1 }
+    }
+  }
+]);
+
+2. Saca el promedio de puertos que tiene cada equipo en la coleccion de equipos:
+
+db.equipos.aggregate([
+  {
+    $group: {
+      _id: "$tipo",
+      promedio_puertos: { $avg: "$puertos_lan" }
+    }
+  }
+]);
+
+3. Suma la cantidad de material gastado en las ordenes:
+
+db.ordenes_mantenimiento.aggregate([
+  {
+    $group: {
+      _id: "$material_usado_1",
+      total_usado: { $sum: "$cantidad_material_1" }
+    }
+  }
+]);
